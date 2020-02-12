@@ -16,3 +16,12 @@
 
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);
+
+/**
+ *
+ * Copy over the _redirects.
+ *
+ */
+$events->afterBuild(function ($jigsaw) {
+    copy('source/_redirects', "build_{$jigsaw->getEnvironment()}/_redirects");
+});
