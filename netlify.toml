@@ -3,3 +3,13 @@
 command = "npm run production"
 publish = "build_production"
 environment = { PHP_VERSION = "7.2" }
+
+[[redirects]]
+  from = "/*"
+  to = "https://jasonkenyon.me/404"
+  status = 404
+  
+  [[redirects]]
+  from = "https://musing-williams-26dbc4.netlify.com/*"
+  to = "https://jasonkenyon.me"
+  status = 302
