@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+
+@import url('https://fonts.googleapis.com/css?family=Chivo:700|Montserrat+Alternates:700&display=swap');
+
+@import 'base';
+@import 'custom';
+
+@tailwind utilities;
