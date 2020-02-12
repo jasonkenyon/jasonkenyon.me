@@ -10,32 +10,40 @@ categories: [life, leadership, work]
 
 ### Being a Leader is Better Than a Boss
 
-So wait, you are saying that I shouldn't be a boss?  What do you even mean by this?  Absolutely! Being a leader is being a boss but with different leadership skills.  You aren't bossing or demanding, nor pointing fingers.  A boss uses words such as I, me, myself...
+So wait, you are saying that I shouldn't be a boss? What do you even mean by this? Being a leader is being a boss but with diverse leadership practices. 
 
-A leader will use words such as we, us, our, team.  A boss will have issues with keeping people under them, whereas a leader will have people stay, flourish, gain trust, and respect from those under them. 
+You aren't bossing or commanding, neither pointing fingers. A boss uses words such as I, me, myself... 
 
-> #### Employees don't leave companies they leave BOSSES.
+A leader will use words such as we, us. A boss will have issues with keeping people under them. Where a leader will have people stay, thrive, gain respect for those below them. 
+
+> #### Employees don't drop companies they leave managers/supervisors.
 
 ### Why You Should Strive To Be a Leader
 
-Being a leader is so much more important than being a boss, you challenge yourself to teach, encourage, and bring people out of their comfort zone.  You take the time to teach them and offer a helping hand when things get rough.  A boss is just someone that will push paper, and do what is best for them, and not what's good for the employees.  
+Being a leader is so much more influential than being a boss! You challenge yourself to teach, encourage, guide people out of their comfort zone. You take the time to develop them and offer a helping hand when things get rocky. A boss is someone that will push paper and do what is best for them, moreover not necessarily what is suitable for the morale of the company. 
 
-Is being a boss a bad thing? That depends on how you take your title of being a boss.  While I'm a supervisor, and technically I'm the boss of several people under me, I don't refer to myself as their boss but their leader. 
+Is being a boss a bad thing? This depends on how you take your power of being a boss. While I'm a supervisor, I'm the supervisor of various people under me. However, I don't relate to myself as their boss but as their leader. 
 
-You see each person that is under me is someone, and that someone has their weaknesses and strengths; it is my job to discover those weaknesses and strengths and encourage them to continue to grow as a person and employee within the company.  
+You see each person that is under me is someone! That someone has vulnerabilities and strengths. It is my responsibility to discover these vulnerabilities and strengths. Help them grow as a person, and as an employee within the organization. 
 
-At the end, when you are a leader you are ensuring that the company will be successful because more and more people will stay with that company.  People don't get tired of the company, they get tired of their bosses, and how they are treated by them. 
+At the end, when you are a leader you are guaranteeing that the company will be thriving because more people will stay. People don't get frustrated by the company, they get weary of their bosses, and how they get treated. 
 
-What struck me and motivated me to even write this post, was a simple YouTube Video; The video creator makes a great point and asks a great question.
+What prompted me to even write this post. Was a inspring YouTube video, the video creator makes a great point and asks a great question.
 
-> #### Sir, ask yourself this question.  But, have you ever heard of a World Boss?
+> #### Sir, ask yourself this question... Have you ever heard of a "World Boss"?
 
-I encourage anyone that is reading this to take the time and watch it, the message in the video is powerful, encouraging, and something that we as leaders or even employees should follow.  You can find that video at **[Boss vs Employee (2020) ](https://www.youtube.com/watch?v=LrVNTZ6ORm8)**
+I recommend anyone that is reading this to take the time and watch the video. The message in the video is powerful, encouraging.
+
+Something that we as leaders or even employees should follow. You can find that video at **[Boss vs Employee (2020) ](https://www.youtube.com/watch?v=LrVNTZ6ORm8)**
 
 ### Dealing with Performance Management
 
-So, of course, this will bring the topics of so we shouldn't issue performance management, and be our employees' friends.  The answer to this is simple, Definitely Not!   Performance management is in place to provide that feedback to the employee, to coach and develop them.
+So, this will bring the subjects of so we shouldn't issue performance administration. Furthermore, be our employees' friends. The answer to this is simple!
 
-Though dealing with performance management, as a leader the employee will know what is coming and how they got there.  As you took the time to teach, and offer a hand to help them out.  By this time you should have had conversations and understand what that employee is struggling with. It is at this time, that they are at a crossroad, and will have to choose their path.   On one end of that path is yourself, as a leader holding out your hand to improve and offer your guidance to your employee, and on the other is an empty road with no street lights and a path of uncertainty.
+ Performance management is in place to provide that feedback to the employee. To coach and develop them. An employee will thrive for feedback if provided with care.
 
-> ***The Opinions Expressed In This Post Are My Own and How I Feel and View Things in a Position That I am In.***
+As a leader, you have to find the balance of providing it. By the time performance management is needed. The employee should know what you have done to help them.
+
+They will also see and understand that performance management is coming. As you took the time to develop and extend a hand to help them out. 
+
+> ***The Opinions Expressed In This Post Are My Own and How I View Things in a Position That I am In.***
