@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://musing-williams-26dbc4.netlify.com/* https://jasonkenyon.me/:splat 301!
