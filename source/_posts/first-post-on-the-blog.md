@@ -45,7 +45,7 @@ People also tend to overdo it with the plugins, making their website slow. (Not 
 
 Static sites here I come! So I went on the look for finding the most suitable static site generator that I could find. Though we know this is a user preference. 
 
-I started working with [Gatsby](https://www.gatsbyjs.org/), it was solid and felt great.  I was also using Contentful as the backend after I found a post on Medium](https://medium.com/@ryanwiemer/gatsby-and-the-jam-stack-91e31508f364) from [Ryan Wiemer](https://medium.com/@ryanwiemer).
+I started working with [Gatsby](https://www.gatsbyjs.org/), it was solid and felt great.  I was also using Contentful as the backend after I found a post on [Medium](https://medium.com/@ryanwiemer/gatsby-and-the-jam-stack-91e31508f364) from [Ryan Wiemer](https://medium.com/@ryanwiemer).
 
 After a couple of weeks of development; it just felt **overly-complicated**... I thought about maintenance, do I want to rely that much on javascript? 
 
