@@ -16,7 +16,15 @@
     <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
     @stack('meta')
     @if ($page->production)
-    <!-- Insert analytics code here -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133731420-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133731420-3');
+    </script>
     @endif
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/brands.css" integrity="sha384-oRjDIXtfHT9YAjxHLAbf8PsJklTJN+dl7PmnAlOTYJhNAspi+/xgU4f12vi5xGzz" crossorigin="anonymous">
