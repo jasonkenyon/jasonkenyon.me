@@ -14,7 +14,7 @@
         @yield('content')
         @if ($page->categories)
         @foreach ($page->categories as $i => $category)
-        <a href="{{ '/blog/categories/' . $category }}" title="View posts in {{ $category }}" class="inline-block rounded-lg text-xs text-orange-500 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">{{ $category }}</a>
+        <a href="{{ '/blog/categories/' . $category }}" title="View posts in {{ $category }}" class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">{{ $category }}</a>
         @endforeach
         @endif
     </div>
