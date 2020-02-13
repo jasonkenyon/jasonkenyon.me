@@ -1,5 +1,9 @@
 <?php
 
+use App\ParsedownParser;
+use App\Listeners\JigsawConfig;
+use Mni\FrontYAML\Markdown\MarkdownParser;
+
 // @var $container \Illuminate\Container\Container
 // @var $events \TightenCo\Jigsaw\Events\EventBus
 
@@ -13,6 +17,10 @@
  *     // Your code here
  * });
  */
+
+$container->bind(MarkdownParser::class, ParsedownParser::class);
+
+$events->beforeBuild(JigsawConfig::class);
 
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);

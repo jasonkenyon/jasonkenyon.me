@@ -75,6 +75,7 @@ class ComposerStaticInit71ba218963d2d7ead539d797f68db81b
         'A' => 
         array (
             'App\\Listeners\\' => 14,
+            'App\\' => 4,
         ),
     );
 
@@ -203,6 +204,10 @@ class ComposerStaticInit71ba218963d2d7ead539d797f68db81b
         array (
             0 => __DIR__ . '/../..' . '/listeners',
             1 => __DIR__ . '/..' . '/tightenco/jigsaw-blog-template/listeners',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
