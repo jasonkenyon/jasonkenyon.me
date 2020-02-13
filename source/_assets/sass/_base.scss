@@ -5,10 +5,10 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-orange-600;
+    @apply .text-orange-800;
 
     &:hover {
-        @apply .text-orange-800;
+        @apply .text-orange-900;
     }
 }
 
