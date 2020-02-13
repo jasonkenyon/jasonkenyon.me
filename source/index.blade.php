@@ -20,7 +20,7 @@
                 @endif
                 @if($project->github != null)
                 <div>
-                    <a href="{{ $project->github }}" title="{{ $project->projectName }} Git Repo" target="_blank"><i class="fab fa-github text-gray-500"> Source</i></a>
+                    <a href="{{ $project->github }}" title="{{ $project->projectName }} Git Repo" target="_blank" rel="noopener"><i class="fab fa-github text-gray-500"> Source</i></a>
                 </div>
                 @endif
             </div>
