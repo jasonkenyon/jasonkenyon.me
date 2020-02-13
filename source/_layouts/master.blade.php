@@ -78,9 +78,9 @@
         <div class="flex flex-wrap-reverse justify-around md:justify-between">
             <div class="md:ml-24 flex items-center font-thin text-sm">&copy; Jason Kenyon - 2019 - {{ date('Y') }}</div>
             <div class="mr-0 mb-4 md:mb-0 md:mr-24 text-2xl flex items-center">
-                <a href="https://github.com/jasonkenyon" target="_blank" rel="noreferrer" title="Jason Kenyon, on github"><i class="fab fa-github mr-4 text-gray-500"></i></a>
-                <a href="https://twitter.com/jasonkenyon_" target="_blank" rel="noreferrer" title="Jason Kenyon, on twitter"><i class="fab fa-twitter mr-4 text-gray-500"></i></a>
-                <a href="https://www.linkedin.com/in/jason-kenyon-995202169/" target="_blank" rel="noreferrer" title="Jason Kenyon, on LinkedIn"><i class="fab fa-linkedin text-gray-500"></i></a>
+                <a href="https://github.com/jasonkenyon" target="_blank" rel="noreferrer" title="Jason Kenyon, on github"><i class="fab fa-github mx-4 text-gray-500"></i></a>
+                <a href="https://twitter.com/jasonkenyon_" target="_blank" rel="noreferrer" title="Jason Kenyon, on twitter"><i class="fab fa-twitter mx-4 text-gray-500"></i></a>
+                <a href="https://www.linkedin.com/in/jason-kenyon-995202169/" target="_blank" rel="noreferrer" title="Jason Kenyon, on LinkedIn"><i class="fab fa-linkedin mx-4 text-gray-500"></i></a>
             </div>
         </div>
         </div>

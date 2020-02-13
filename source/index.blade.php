@@ -14,13 +14,13 @@
             <hr />
             <div class="flex justify-between items-center text-sm pt-2">
                 @if($project->opensource === false)
-                <span class="text-orange-600">A Closed-source Project</span>
+                <span class="text-orange-800">A Closed-source Project</span>
                 @else
-                <span class="text-orange-600">An Open-source Project</span>
+                <span class="text-orange-800">An Open-source Project</span>
                 @endif
                 @if($project->github != null)
                 <div>
-                    <a href="{{ $project->github }}" title="{{ $project->projectName }} Git Repo" target="_blank" rel="noopener"><i class="fab fa-github text-gray-500"> Source</i></a>
+                    <a href="{{ $project->github }}" title="{{ $project->projectName }} Git Repo" target="_blank" rel="noopener"><i class="fab fa-github text-gray-700"> Source</i></a>
                 </div>
                 @endif
             </div>
