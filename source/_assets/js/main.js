@@ -1,7 +1,7 @@
 window.Vue = require('vue');
 
 import hljs from 'highlight.js/lib/highlight';
-import { VLazyImagePlugin } from "v-lazy-image";
+import {VLazyImagePlugin} from "v-lazy-image";
 
 
 // Syntax highlighting

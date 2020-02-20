@@ -3,35 +3,36 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
-    'production' => false,
-    'siteName' => 'The online space of - Jason Kenyon',
+    'baseUrl'         => '',
+    'production'      => false,
+    'siteName'        => 'The online space of - Jason Kenyon',
     'siteDescription' => 'The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon.',
-    'siteAuthor' => 'Jason Kenyon',
+    'siteAuthor'      => 'Jason Kenyon',
 
     // collections
-    'collections' => [
+    'collections'     => [
         'projects',
-        'posts' => [
+        'posts'      => [
             'author' => 'Jason Kenyon',
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'sort'   => '-date',
+            'path'   => 'blog/{filename}',
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path'  => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
+                    return $post->categories ? in_array($page->getFilename(),
+                        $post->categories, true) : false;
                 });
             },
         ],
     ],
 
     // helpers
-    'getDate' => function ($page) {
+    'getDate'         => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'getExcerpt' => function ($page, $length = 255) {
+    'getExcerpt'      => function ($page, $length = 255) {
         if ($page->excerpt) {
             return $page->excerpt;
         }
@@ -39,7 +40,9 @@ return [
         $content = preg_split('/<!-- more -->/m', $page->getContent(), 2);
         $cleaned = trim(
             strip_tags(
-                preg_replace(['/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'], '', $content[0]),
+                preg_replace([
+                    '/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'
+                ], '', $content[0]),
                 '<code>'
             )
         );
@@ -50,15 +53,17 @@ return [
 
         $truncated = substr($cleaned, 0, $length);
 
-        if (substr_count($truncated, '<code>') > substr_count($truncated, '</code>')) {
+        if (substr_count($truncated, '<code>') > substr_count($truncated,
+                '</code>')
+        ) {
             $truncated .= '</code>';
         }
 
         return strlen($cleaned) > $length
-            ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
+            ? preg_replace('/\s+?(\S+)?$/', '', $truncated).'...'
             : $cleaned;
     },
-    'isActive' => function ($page, $path) {
+    'isActive'        => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];

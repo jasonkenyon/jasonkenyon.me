@@ -1,1 +1,22 @@
-{"baseUrl":"","production":false,"siteName":"The online space of - Jason Kenyon","siteDescription":"The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon.","siteAuthor":"Jason Kenyon","collections":{"projects":[],"posts":{"author":"Jason Kenyon","sort":"-date","path":"blog\/{filename}"},"categories":{"path":"\/blog\/categories\/{filename}","posts":{}}},"getDate":{},"getExcerpt":{},"isActive":{}}
+{
+  "baseUrl": "",
+  "production": false,
+  "siteName": "The online space of - Jason Kenyon",
+  "siteDescription": "The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon.",
+  "siteAuthor": "Jason Kenyon",
+  "collections": {
+    "projects": [],
+    "posts": {
+      "author": "Jason Kenyon",
+      "sort": "-date",
+      "path": "blog\/{filename}"
+    },
+    "categories": {
+      "path": "\/blog\/categories\/{filename}",
+      "posts": {}
+    }
+  },
+  "getDate": {},
+  "getExcerpt": {},
+  "isActive": {}
+}

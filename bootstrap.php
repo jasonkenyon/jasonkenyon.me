@@ -1,7 +1,7 @@
 <?php
 
-use App\ParsedownParser;
 use App\Listeners\JigsawConfig;
+use App\ParsedownParser;
 use Mni\FrontYAML\Markdown\MarkdownParser;
 
 // @var $container \Illuminate\Container\Container
