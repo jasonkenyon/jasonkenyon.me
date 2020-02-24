@@ -3,7 +3,6 @@
 namespace App;
 
 use Mni\FrontYAML\Markdown\MarkdownParser;
-
 //use App\CustomParsedown;
 
 class ParsedownParser implements MarkdownParser
@@ -18,8 +17,7 @@ class ParsedownParser implements MarkdownParser
     }
 
     /**
-     * @param  string  $markdown
-     *
+     * @param  string $markdown
      * @return  string
      */
     public function parse($markdown)

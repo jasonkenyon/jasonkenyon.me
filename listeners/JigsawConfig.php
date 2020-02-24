@@ -9,8 +9,7 @@ class JigsawConfig
     public function handle(Jigsaw $jigsaw)
     {
 
-        $jigsaw->writeSourceFile('_assets/data/config.json',
-            $jigsaw->getConfig());
+        $jigsaw->writeSourceFile('_assets/data/config.json', $jigsaw->getConfig());
 
     }
 }

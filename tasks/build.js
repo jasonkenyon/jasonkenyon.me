@@ -33,16 +33,16 @@ module.exports = {
 
     browserSync: function (proxy) {
         return new BrowserSyncPlugin({
-                notify: false,
-                port: port,
-                proxy: proxy,
-                server: proxy ? null : {baseDir: 'build_' + env + '/'},
+            notify: false,
+            port: port,
+            proxy: proxy,
+            server: proxy ? null : { baseDir: 'build_' + env + '/' },
+        },
+        {
+            reload: false,
+            callback: function() {
+                browserSyncInstance = BrowserSync.get('bs-webpack-plugin');
             },
-            {
-                reload: false,
-                callback: function () {
-                    browserSyncInstance = BrowserSync.get('bs-webpack-plugin');
-                },
-            })
+        })
     },
 };
