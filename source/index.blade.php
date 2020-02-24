@@ -39,12 +39,7 @@
         <div class="flex flex-wrap items-center justify-center p-6">
             <div class="text-gray-700 leading-relaxed text-gray-700 text-base">
                 <p>
-                    There is a chance that you don't know me, and well to be upfront
-                    regarding it that is okay. I've never been that big into
-                    contributing or providing anything that I have made open source.
-                    It's always just been for friends, family and personal reasons.
-                    Though I'm looking to change that and get into Open Source and
-                    provide resources where I can.
+                    There is a chance that you don't know me and well to be upfront regarding it that is okay. I've never been that big into contributing or providing anything that I have made open source. It's always just been for friends and family and personal reasons. Though I'm looking to change that and get into Open Source and provide resources where I can.
                 </p>
                 <p>
                     I'm a Sys-admin, developer, and wannabe designer... Living in
