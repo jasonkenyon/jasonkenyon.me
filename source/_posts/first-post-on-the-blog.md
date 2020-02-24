@@ -6,13 +6,14 @@ date: 2020-02-10
 cover_image: /assets/images/blog/gabriel-crismariu-sOK9NjLArCw-unsplash.jpg
 description: The very first post to the blog, how the website came to be, trails and errors, and more about Jason.
 ---
+
 Hi, I'm Jason! Welcome to my first blog post.
 
-Recently, blogs have become a great source and an abundance of knowledge. I wanted to present the sources of information that I have also come across and experienced. 
+Recently, blogs have become a great source and an abundance of knowledge. I wanted to present the sources of information that I have also come across and experienced.
 
 So, welcome to my brand-new website; I intend on blogging about programming, life, and what else may come to mind. I also want to write about what I've learned from the Laravel community. I'm also establishing a place to allow me to provide and yield tutorials, and overall a database of information I can look back on.
 
-So if you're ready, we will go ahead and dive into it. I wanted to start my first post by providing information on what I made the website on.  I also thought that it was a great time to give readers that will visit my site, a bit more information about me. It allows you to know who is behind the scenes and writing these blog posts. Though that is always the troublesome part right... What should I start with? I guess I will present a bit more information about myself so that you know who is writing these blog posts.
+So if you're ready, we will go ahead and dive into it. I wanted to start my first post by providing information on what I made the website on. I also thought that it was a great time to give readers that will visit my site, a bit more information about me. It allows you to know who is behind the scenes and writing these blog posts. Though that is always the troublesome part right... What should I start with? I guess I will present a bit more information about myself so that you know who is writing these blog posts.
 
 ### A Bit More About Jason
 
@@ -22,7 +23,7 @@ Between the two of us, we have 6 kids together; I have three girls and two boys 
 
 ### The Road to Static Site Generators that Didn't Work Out.
 
-Okay, okay I get it you are ready for the nuts and bolts that run this website. Well, I began making the website in a mixture of things. One of which I began to write it in was Laravel. It's a PHP framework that I absolutely appreciate, and want to use it on all projects.  Though, of course, we all know that each project has its own requirements. Building it with [Laravel](https://laravel.com) was sequentially going to be overkill.
+Okay, okay I get it you are ready for the nuts and bolts that run this website. Well, I began making the website in a mixture of things. One of which I began to write it in was Laravel. It's a PHP framework that I absolutely appreciate, and want to use it on all projects. Though, of course, we all know that each project has its own requirements. Building it with [Laravel](https://laravel.com) was sequentially going to be overkill.
 
 I didn't want to use WordPress. It's a good firm blogging platform, though their vision has gone away from being just that. A blogging platform to a full-blown CMS. It tries too hard to be a CMS, and genuinely, the core isn't too bad? (pun intended) The issue is plugins and themes that you can get for it. Neglecting to patch things, and always trying to keep plugins/themes updated. People also tend to overdo it with plugins making their website slow. Not that WordPress by default isn't slow already... I wanted something that was going to be fast, simple, and easy to update.
 
@@ -30,9 +31,9 @@ Static sites here I come! So I went on the look for finding the most suitable st
 
 I started working with [Gatsby](https://www.gatsbyjs.org/), it was solid and felt great. I was also using Contentful as the backend after I found a post on [Medium](https://medium.com/@ryanwiemer/gatsby-and-the-jam-stack-91e31508f364) from [Ryan Wiemer](https://medium.com/@ryanwiemer). After a couple of weeks of development. It just felt **overly-complicated**... I thought about maintenance, do I want to rely that much on javascript?
 
-I then found [Gridsome](https://gridsome.org/), *yes, okay I know it's also javascript and built using **Vuejs** rather than **Reactjs**.* So, I started playing with Gridsome, and naturally, to be quite outspoken, I truly _valued_ it over Gatsby. It was something that I knew and was familiar with. After all, I come from the Laravel community, where Vuejs is a notable player.
+I then found [Gridsome](https://gridsome.org/), _yes, okay I know it's also javascript and built using **Vuejs** rather than **Reactjs**._ So, I started playing with Gridsome, and naturally, to be quite outspoken, I truly _valued_ it over Gatsby. It was something that I knew and was familiar with. After all, I come from the Laravel community, where Vuejs is a notable player.
 
-Everything was coming together, and I completed and launched the site with Netlify. Though, after a while, it still felt like something was yearning, or I was **overloading** it with *javascript*. So I had begun the hunt once again for something that may work out better.
+Everything was coming together, and I completed and launched the site with Netlify. Though, after a while, it still felt like something was yearning, or I was **overloading** it with _javascript_. So I had begun the hunt once again for something that may work out better.
 
 ### Jigsaw by TightenCo That Lead a Clear Path
 
