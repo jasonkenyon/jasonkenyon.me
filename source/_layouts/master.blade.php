@@ -15,24 +15,6 @@
     <link rel="icon" href="/favicon.png">
     <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
     @stack('meta')
-    @if ($page->production)
-    <script>
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setDoNotTrack", true]);
-        _paq.push(["disableCookies"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//analytics.jasonkenyon.me/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    @endif
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/brands.css" integrity="sha384-oRjDIXtfHT9YAjxHLAbf8PsJklTJN+dl7PmnAlOTYJhNAspi+/xgU4f12vi5xGzz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/fontawesome.css" integrity="sha384-k8n1hWo+b1vuRb6E3KATGC++lfNDnJTtJ6pS2BFF3tp/OshnO7uhzoOj/zJbGfwg" crossorigin="anonymous">
