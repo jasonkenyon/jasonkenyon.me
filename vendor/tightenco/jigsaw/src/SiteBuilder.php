@@ -97,8 +97,10 @@ class SiteBuilder
     {
         $this->consoleOutput->writeWritingFiles();
 
-        return $files->map(function ($file) use ($destination) {
-            return $this->writeFile($file, $destination);
+        return $files->mapWithKeys(function ($file) use ($destination) {
+            $outputLink = $this->writeFile($file, $destination);
+
+            return [$outputLink => $file->inputFile()->getPageData()];
         });
     }
 
@@ -130,10 +132,11 @@ class SiteBuilder
         $filename = $file->getFilenameWithoutExtension();
         $extension = $file->getFullExtension();
         $path = rightTrimPath($this->outputPathResolver->link($file->getRelativePath(), $filename, $file->getExtraBladeExtension() ?: 'html'));
+        $relativePath = $file->getRelativePath();
         $url = rightTrimPath($baseUrl) . '/' . trimPath($path);
         $modifiedTime = $file->getLastModifiedTime();
 
-        return compact('filename', 'baseUrl', 'path', 'extension', 'url', 'modifiedTime');
+        return compact('filename', 'baseUrl', 'path', 'relativePath', 'extension', 'url', 'modifiedTime');
     }
 
     private function getOutputDirectory($file)
