@@ -1,7 +1,7 @@
 ---
 extends: _layouts.category
-title: Work
-description: All posts regarding work experience.
+title: Laravel
+description: All posts regarding the Laravel PHP framework, updates, etc.
 ---
 
 These posts are about Laravel, the PHP Framework, new features, making application with it etc.

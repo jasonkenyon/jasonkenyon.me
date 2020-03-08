@@ -5,7 +5,7 @@ title: Verifying Requests from Slack
 date: 2020-03-07
 cover_image: /assets/images/blog/pankaj-patel-OXkUz1Dp-4g-unsplash-min.jpg
 description: Verifying POST requests from Slack using Laravel.
-categories: [PHP, Slack, Coding, Laravel]
+categories: [php, slack, coding, laravel]
 ---
 
 Recently, I have been developing and building more and more things for _Slack_. More so, it was updating some apps that I created with just PHP without a framework, to use Laravel and make it a bit more expandable. I also undertook a complete code base update, so that the application itself wasn't using the Dialogs but instead using their new Modals.

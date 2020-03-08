@@ -1,7 +1,7 @@
 ---
 extends: _layouts.category
-title: Work
-description: All posts regarding work experience.
+title: PHP
+description: All posts regarding PHP.
 ---
 
 These posts are all regarding PHP.
