@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Verifying Requests from Slack
-date: 2020-02-11
+date: 2020-03-07
 cover_image: /assets/images/blog/pankaj-patel-OXkUz1Dp-4g-unsplash-min.jpg
 description: Verifying POST requests from Slack using Laravel.
 categories: [PHP, Slack, Coding, Laravel]
