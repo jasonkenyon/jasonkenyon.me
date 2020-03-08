@@ -10,9 +10,13 @@ categories: [PHP, Slack, Coding, Laravel]
 
 Recently, I have been developing and building more and more things for _Slack_. More so, it was updating some apps that I created with just PHP without a framework, to use Laravel and make it a bit more expandable. I also undertook a complete code base update, so that the application itself wasn't using the Dialogs but instead using their new Modals.
 
+## The Big Ol' Rookie Mistake...
+
 Then this got me to thinking and wondering, I know that there is a Signing Secret key; though to be 100% honest, I never gave it considerable thought or pursued looking into what this Signing Secret was all about. I'll admit this was a big rookie mistake, but something that I learned from and figured I would share with anyone else.
 
 So what exactly is this Signing Secret key? The Signing Secret key is to be used in conjunction with verifying the headers of the request your application is receiving. On each request that Slack sends out, they also attach an HTTP header, X-Slack-Signature. This signature is created by Slack using your Signing Secret key, and the full body of the request that they are sending back. Here is what Slack has to say about the Signing Secret key and information regarding it.
+
+## What are signed secrets?
 
 > Slack creates a unique string for your app and shares it with you. Verify requests from Slack with confidence by verifying signatures using your signing secret.
 >
@@ -27,6 +31,8 @@ So what exactly is this Signing Secret key? The Signing Secret key is to be used
 Well, now you can see why I said it was indeed a rookie mistake by not including it the first time. So, I went to make a middleware, which of course, Laravel, makes this painless.
 
 I looked and didn't see an example for PHP; however, from the documentation of Slack, it didn't look too hard to complete. So I started my way making the middleware and came up with the following.
+
+## The Code
 
 ```php
 <?php
