@@ -28,7 +28,7 @@ Well, now you can see why I said it was indeed a rookie mistake by not including
 
 I looked and didn't see an example for PHP; however, from the documentation of Slack, it didn't look too hard to complete. So I started my way making the middleware and came up with the following.
 
-`php
+```php
 
 <?php
 
@@ -68,8 +68,7 @@ class VerifyRequestIsFromSlack
         return $next($request);
     }
 }
-
-`
+```
 
 In the above, we simply check if the HTTP headers for Slack exists; if the X-Slack-Signature or the X-Slack-Request-Timestamp is missing, we throw a custom exception.  Of course, throwing a generic exception would also work.  Thereafter, we simply grab the version from the X-Slack-Signature, X-Slack-Request-Timestamp.
 
