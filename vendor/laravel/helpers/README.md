@@ -11,7 +11,7 @@ This package provides a backwards compatibility layer for Laravel 5.8 helpers in
 
 ## Installation
 
-Install the package with Composer: 
+Install the package with Composer:
 
     composer require laravel/helpers
 
