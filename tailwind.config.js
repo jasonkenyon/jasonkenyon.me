@@ -2,15 +2,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: [
-          'monospace',
-        ],
-        mont: [
-          'Montserrat Alternates',
-        ],
-      },
-    },
+        mono: ["monospace"],
+        mont: ["Montserrat Alternates"]
+      }
+    }
   },
-  plugins: [
-  ]
-}
+  plugins: []
+};

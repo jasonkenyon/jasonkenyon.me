@@ -7,4 +7,10 @@ environment = { PHP_VERSION = "7.2" }
 [[redirects]]
   from = "/*"
   to = "/404/index.html#Error404"
-  status = 404 
+  status = 404
+
+[[redirects]]
+  from = "musing-williams-26dbc4.netlify.com"
+  to = "https://jasonkenyon.me"
+  status = 301
+  force = true
