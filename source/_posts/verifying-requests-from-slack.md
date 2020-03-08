@@ -70,10 +70,10 @@ class VerifyRequestIsFromSlack
 }
 ```
 
-In the above, we simply check if the HTTP headers for Slack exists; if the X-Slack-Signature or the X-Slack-Request-Timestamp is missing, we throw a custom exception.  Of course, throwing a generic exception would also work.  Thereafter, we simply grab the version from the X-Slack-Signature, X-Slack-Request-Timestamp.
+In the above, we simply check if the HTTP headers for Slack exists; if the X-Slack-Signature or the X-Slack-Request-Timestamp is missing, we throw a custom exception. Of course, throwing a generic exception would also work. Thereafter, we simply grab the version from the X-Slack-Signature, X-Slack-Request-Timestamp.
 
-Once I had that information, I passed that information into the hash_hmac function within PHP.  Along with the body of the request untouched.  After doing this, it is time to verify the hash that was just created to the hash that was sent in the X-Slack-Signature.  If the hashes don't match we again throw a custom exception, and if it does we continue and the request is fulfilled reached out Route, in Laravel to complete the request and therefor show the Modal. 
+Once I had that information, I passed that information into the hash_hmac function within PHP. Along with the body of the request untouched. After doing this, it is time to verify the hash that was just created to the hash that was sent in the X-Slack-Signature. If the hashes don't match we again throw a custom exception, and if it does we continue and the request is fulfilled reached out Route, in Laravel to complete the request and therefor show the Modal.
 
-I will say, that I'm very much still learning about Slack and the API that it allows us to use.  Any other information that I find that may be helpful, I will for sure blog about it and share that new-found knowledge that I discovered.
+I will say, that I'm very much still learning about Slack and the API that it allows us to use. Any other information that I find that may be helpful, I will for sure blog about it and share that new-found knowledge that I discovered.
 
 I may also work on getting a Slack package for Laravel to build out Modals, but at the present time, I don't have any plans for that just yet.
