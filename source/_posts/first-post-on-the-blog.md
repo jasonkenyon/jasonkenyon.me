@@ -29,7 +29,7 @@ I didn't want to use WordPress. It's a good firm blogging platform, though their
 
 Static sites here I come! So I went on the look for finding the most suitable static site generator that I could find. Though we know this is a user preference.
 
-I started working with [Gatsby](https://www.gatsbyjs.org/), it was solid and felt great. I was also using Contentful as the backend after I found a post on [Medium](https://medium.com/ryanwiemer/gatsby-and-the-jam-stack-91e31508f364) from [Ryan Wiemer](https://medium.com/ryanwiemer). After a couple of weeks of development. It just felt **overly-complicated**... I thought about maintenance, do I want to rely that much on javascript?
+I started working with [Gatsby](https://www.gatsbyjs.org/), it was solid and felt great. I was also using Contentful as the backend after I found a post on [Medium](https://medium.com/ryanwiemer/gatsby-and-the-jam-stack-91e31508f364) from Ryan Wiemer. After a couple of weeks of development. It just felt **overly-complicated**... I thought about maintenance, do I want to rely that much on javascript?
 
 I then found [Gridsome](https://gridsome.org/), _yes, okay I know it's also javascript and built using **Vuejs** rather than **Reactjs**._ So, I started playing with Gridsome, and naturally, to be quite outspoken, I truly _valued_ it over Gatsby. It was something that I knew and was familiar with. After all, I come from the Laravel community, where Vuejs is a notable player.
 
