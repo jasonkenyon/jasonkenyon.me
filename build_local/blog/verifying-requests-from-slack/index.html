@@ -1,51 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon.">
-    <meta property="og:title" content="Verifying Requests from Slack | The online space of - Jason Kenyon" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon."
+    />
+    <meta
+      property="og:title"
+      content="Verifying Requests from Slack | The online space of - Jason Kenyon"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/blog/verifying-requests-from-slack" />
-    <meta property="og:description" content="The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon." />
-    <title>Verifying Requests from Slack | The online space of - Jason Kenyon</title>
-    <link rel="home" href="">
-    <link rel="icon" href="/favicon.png">
-    <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="The online space of - Jason Kenyon Atom Feed">
+    <meta
+      property="og:description"
+      content="The Online Space of Developer, Sysadmin at Precious Memories Photography, Laravel developer, blogger, and Vue.js user, Jason Kenyon."
+    />
+    <title>
+      Verifying Requests from Slack | The online space of - Jason Kenyon
+    </title>
+    <link rel="home" href="" />
+    <link rel="icon" href="/favicon.png" />
+    <link
+      href="/blog/feed.atom"
+      type="application/atom+xml"
+      rel="alternate"
+      title="The online space of - Jason Kenyon Atom Feed"
+    />
     <meta property="og:title" content="Verifying Requests from Slack" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/verifying-requests-from-slack" />
-<meta property="og:description" content="Verifying POST requests from Slack using Laravel." />
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=c9264fc2b8b858ca2318">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/brands.css" integrity="sha384-oRjDIXtfHT9YAjxHLAbf8PsJklTJN+dl7PmnAlOTYJhNAspi+/xgU4f12vi5xGzz" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/fontawesome.css" integrity="sha384-k8n1hWo+b1vuRb6E3KATGC++lfNDnJTtJ6pS2BFF3tp/OshnO7uhzoOj/zJbGfwg" crossorigin="anonymous">
-</head>
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/blog/verifying-requests-from-slack" />
+    <meta
+      property="og:description"
+      content="Verifying POST requests from Slack using Laravel."
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/build/css/main.css?id=c9264fc2b8b858ca2318"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.12.1/css/brands.css"
+      integrity="sha384-oRjDIXtfHT9YAjxHLAbf8PsJklTJN+dl7PmnAlOTYJhNAspi+/xgU4f12vi5xGzz"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.12.1/css/fontawesome.css"
+      integrity="sha384-k8n1hWo+b1vuRb6E3KATGC++lfNDnJTtJ6pS2BFF3tp/OshnO7uhzoOj/zJbGfwg"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body class="bg-gray-800 min-h-screen flex flex-col">
+  <body class="bg-gray-800 min-h-screen flex flex-col">
     <main role="main" class="py-16 flex-grow" id="app">
-        <div class="container mx-auto px-4">
-    <h1 class="text-4xl underline font-bold font-chivo uppercase text-orange-600">
-        Verifying Requests from Slack</h1>
-    <div class="text-base text-gray-700 italic">Jason Kenyon • March 7, 2020</div>
-    <div class="mb-12 pb-4" v-pre>
-        <p>Recently, I have been developing and building more and more things for <em>Slack</em>. More so, it was updating some apps that I created with just PHP without a framework, to use Laravel and make it a bit more expandable. I also undertook a complete code base update, so that the application itself wasn't using the Dialogs but instead using their new Modals.</p>
-<h2>The Big Ol' Rookie Mistake...</h2>
-<p>Then this got me to thinking and wondering, I know that there is a Signing Secret key; though to be 100% honest, I never gave it considerable thought or pursued looking into what this Signing Secret was all about. I'll admit this was a big rookie mistake, but something that I learned from and figured I would share with anyone else.</p>
-<p>So what exactly is this Signing Secret key? The Signing Secret key is to be used in conjunction with verifying the headers of the request your application is receiving. On each request that Slack sends out, they also attach an HTTP header, X-Slack-Signature. This signature is created by Slack using your Signing Secret key, and the full body of the request that they are sending back. Here is what Slack has to say about the Signing Secret key and information regarding it.</p>
-<h2>What are signed secrets?</h2>
-<blockquote>
-<p>Slack creates a unique string for your app and shares it with you. Verify requests from Slack with confidence by verifying signatures using your signing secret.</p>
-<p>On each HTTP request that Slack sends, we add an X-Slack-Signature HTTP header. The signature is created by combining the signing secret with the body of the request we're sending using a standard HMAC-SHA256 keyed hash.</p>
-<p>The resulting signature is unique to each request and doesn't directly contain any secret information. That keeps your app secure, preventing bad actors from causing mischief.</p>
-<p>Signing secrets replace the old verification tokens. Good news: the new signature is used exactly the same way as the deprecated verification token. It's just computed more securely.</p>
-<p>Some SDKs perform signature verification automatically, accessible via an easy drop-in replacement of your signing secret for your old verification token. See the SDK support section for more detail.</p>
-</blockquote>
-<p>Well, now you can see why I said it was indeed a rookie mistake by not including it the first time. So, I went to make a middleware, which of course, Laravel, makes this painless.</p>
-<p>I looked and didn't see an example for PHP; however, from the documentation of Slack, it didn't look too hard to complete. So I started my way making the middleware and came up with the following.</p>
-<h2>The Code</h2>
-<pre><code class="language-php">&lt;?php
+      <div class="container mx-auto px-4">
+        <h1
+          class="text-4xl underline font-bold font-chivo uppercase text-orange-600"
+        >
+          Verifying Requests from Slack
+        </h1>
+        <div class="text-base text-gray-700 italic">
+          Jason Kenyon • March 7, 2020
+        </div>
+        <div class="mb-12 pb-4" v-pre>
+          <p>
+            Recently, I have been developing and building more and more things
+            for <em>Slack</em>. More so, it was updating some apps that I
+            created with just PHP without a framework, to use Laravel and make
+            it a bit more expandable. I also undertook a complete code base
+            update, so that the application itself wasn't using the Dialogs but
+            instead using their new Modals.
+          </p>
+          <h2>The Big Ol' Rookie Mistake...</h2>
+          <p>
+            Then this got me to thinking and wondering, I know that there is a
+            Signing Secret key; though to be 100% honest, I never gave it
+            considerable thought or pursued looking into what this Signing
+            Secret was all about. I'll admit this was a big rookie mistake, but
+            something that I learned from and figured I would share with anyone
+            else.
+          </p>
+          <p>
+            So what exactly is this Signing Secret key? The Signing Secret key
+            is to be used in conjunction with verifying the headers of the
+            request your application is receiving. On each request that Slack
+            sends out, they also attach an HTTP header, X-Slack-Signature. This
+            signature is created by Slack using your Signing Secret key, and the
+            full body of the request that they are sending back. Here is what
+            Slack has to say about the Signing Secret key and information
+            regarding it.
+          </p>
+          <h2>What are signed secrets?</h2>
+          <blockquote>
+            <p>
+              Slack creates a unique string for your app and shares it with you.
+              Verify requests from Slack with confidence by verifying signatures
+              using your signing secret.
+            </p>
+            <p>
+              On each HTTP request that Slack sends, we add an X-Slack-Signature
+              HTTP header. The signature is created by combining the signing
+              secret with the body of the request we're sending using a standard
+              HMAC-SHA256 keyed hash.
+            </p>
+            <p>
+              The resulting signature is unique to each request and doesn't
+              directly contain any secret information. That keeps your app
+              secure, preventing bad actors from causing mischief.
+            </p>
+            <p>
+              Signing secrets replace the old verification tokens. Good news:
+              the new signature is used exactly the same way as the deprecated
+              verification token. It's just computed more securely.
+            </p>
+            <p>
+              Some SDKs perform signature verification automatically, accessible
+              via an easy drop-in replacement of your signing secret for your
+              old verification token. See the SDK support section for more
+              detail.
+            </p>
+          </blockquote>
+          <p>
+            Well, now you can see why I said it was indeed a rookie mistake by
+            not including it the first time. So, I went to make a middleware,
+            which of course, Laravel, makes this painless.
+          </p>
+          <p>
+            I looked and didn't see an example for PHP; however, from the
+            documentation of Slack, it didn't look too hard to complete. So I
+            started my way making the middleware and came up with the following.
+          </p>
+          <h2>The Code</h2>
+          <pre><code class="language-php">&lt;?php
 
 namespace App\Http\Middleware;
 
@@ -82,32 +174,80 @@ class VerifyRequestIsFromSlack
         return $next($request);
     }
 }</code></pre>
-<p>In the above, we simply check if the HTTP headers for Slack exists; if the X-Slack-Signature or the X-Slack-Request-Timestamp is missing, we throw a custom exception. Of course, throwing a generic exception would also work. Thereafter, we simply grab the version from the X-Slack-Signature, X-Slack-Request-Timestamp.</p>
-<p>Once I had that information, I passed that information into the hash_hmac function within PHP. Along with the body of the request untouched. After doing this, it is time to verify the hash that was just created to the hash that was sent in the X-Slack-Signature. If the hashes don't match we again throw a custom exception, and if it does we continue and the request is fulfilled reached out Route, in Laravel to complete the request and therefor show the Modal.</p>
-<p>I will say, that I'm very much still learning about Slack and the API that it allows us to use. Any other information that I find that may be helpful, I will for sure blog about it and share that new-found knowledge that I discovered.</p>
-<p>I may also work on getting a Slack package for Laravel to build out Modals, but at the present time, I don't have any plans for that just yet.</p>                        <a href="/blog/categories/php" title="View posts in php" class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">php</a>
-                <a href="/blog/categories/slack" title="View posts in slack" class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">slack</a>
-                <a href="/blog/categories/coding" title="View posts in coding" class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">coding</a>
-                <a href="/blog/categories/laravel" title="View posts in laravel" class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase">laravel</a>
-                    </div>
-</div>
+          <p>
+            In the above, we simply check if the HTTP headers for Slack exists;
+            if the X-Slack-Signature or the X-Slack-Request-Timestamp is
+            missing, we throw a custom exception. Of course, throwing a generic
+            exception would also work. Thereafter, we simply grab the version
+            from the X-Slack-Signature, X-Slack-Request-Timestamp.
+          </p>
+          <p>
+            Once I had that information, I passed that information into the
+            hash_hmac function within PHP. Along with the body of the request
+            untouched. After doing this, it is time to verify the hash that was
+            just created to the hash that was sent in the X-Slack-Signature. If
+            the hashes don't match we again throw a custom exception, and if it
+            does we continue and the request is fulfilled reached out Route, in
+            Laravel to complete the request and therefor show the Modal.
+          </p>
+          <p>
+            I will say, that I'm very much still learning about Slack and the
+            API that it allows us to use. Any other information that I find that
+            may be helpful, I will for sure blog about it and share that
+            new-found knowledge that I discovered.
+          </p>
+          <p>
+            I may also work on getting a Slack package for Laravel to build out
+            Modals, but at the present time, I don't have any plans for that
+            just yet.
+          </p>
+          <a
+            href="/blog/categories/php"
+            title="View posts in php"
+            class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase"
+            >php</a
+          >
+          <a
+            href="/blog/categories/slack"
+            title="View posts in slack"
+            class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase"
+            >slack</a
+          >
+          <a
+            href="/blog/categories/coding"
+            title="View posts in coding"
+            class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase"
+            >coding</a
+          >
+          <a
+            href="/blog/categories/laravel"
+            title="View posts in laravel"
+            class="inline-block rounded-lg text-xs text-orange-800 border border-orange-300 py-1 px-4 bg-orange-200 my-4 mr-2 uppercase"
+            >laravel</a
+          >
+        </div>
+      </div>
 
-        <div class="min-w-full bg-circuits px-4">
-        <nav class="flex container mx-auto justify-between text-sm md:text-base">
-            <div class="my-16">
-                                <div class="uppercase text-base font-thin mb-2">
-                    &LeftArrow; Previous Post
-                </div>
-                <a class="text-xl" href="/blog/stop-being-a-boss-be-a-leader" title="Older Post: Stop being a boss, be a leader">
-                    Stop being a boss, be a leader
-                </a>
-                            </div>
-            <div class="my-16">
-                            </div>
+      <div class="min-w-full bg-circuits px-4">
+        <nav
+          class="flex container mx-auto justify-between text-sm md:text-base"
+        >
+          <div class="my-16">
+            <div class="uppercase text-base font-thin mb-2">
+              &LeftArrow; Previous Post
+            </div>
+            <a
+              class="text-xl"
+              href="/blog/stop-being-a-boss-be-a-leader"
+              title="Older Post: Stop being a boss, be a leader"
+            >
+              Stop being a boss, be a leader
+            </a>
+          </div>
+          <div class="my-16"></div>
         </nav>
-    </div>
-        </main>
+      </div>
+    </main>
     <script src="/assets/build/js/main.js?id=22a0cd82bd205500c859"></script>
-    </body>
-
+  </body>
 </html>
